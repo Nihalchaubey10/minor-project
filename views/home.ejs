@@ -1,0 +1,98 @@
+<%- include("partials/header") %> 
+
+<section id="intro" class="intro">
+    <div class="container">
+        <h1>Welcome to Zomato Clone</h1>
+        <h4>Discover the Best Foods & Drinks</h4>
+        <a href="/order" class="btn btn-danger btn-lg">Order Now</a>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+        <h1>Our Services</h1>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="services-item">
+                    <img src="/img/1.png" alt="Food_Catering">
+                    <h3>Food Catering</h3>
+                    <p>Our platform promises to provide fresh food delivery without compromising with the taste and cost-effectiveness of your meal. This will make your experience super yummy, blend of taste and mind-blowing.</p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="services-item">
+                    <img src="/img/2.png" alt="Bulk_Ordering">
+                    <h3>Bulk Ordering</h3>
+                    <p>Our platform promises to provide very good offers when one buy in bulk from our affiliated resturants. Either you buy in bulk or, just for one, the taste and the experience never fades.</p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="services-item">
+                    <img src="/img/3.png" alt="Food_Ordering">
+                    <h3>Food Ordering</h3>
+                    <p>Order food online from resturants affiliated from our platform and get it delivered on your home within given time with best taste and food quality. Customer support is also very good.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why-us" class="why-us">
+    <div class="container">
+        <h1>Why Us?</h1>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="why-item">
+                    <h3>Fast & Safe Delivery</h3>
+                    <p>Our delivery partners ensure very fast & safe delivery to our customers.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="why-item">
+                    <h3>Best Food Quality</h3>
+                    <p>Our resturant partners ensure that the food served should be best in market.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="why-item">
+                    <h3>Trusted by people</h3>
+                    <p>This platform is trusted by a lot of people for their daily requirements of food.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="why-item">
+                    <h3>Best Customer Support</h3>
+                    <p>Our platform provides best customer support and by using that queries can be solved within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form method="POST" action="/">
+            <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Enter your name" required>
+            </div><br>
+            <div class="form-group">
+                <input type="email" class="form-control" name="userEmail" placeholder="Enter your email" required>
+            </div><br>
+            <div class="form-group">
+                <input type="text" class="form-control" name="userContact" placeholder="Enter your Phone Number" required>
+            </div><br>
+            <div class="form-group">
+                <textarea name="userMessage" class="form-control" placeholder="Enter your message" cols="30" rows="10"></textarea>
+            </div><br>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary btn-lg">Continue</button>
+            </div>
+            <p class="error-text"><%= message %> </p>
+        </form>
+    </div>
+</section>
+
+<%- include("partials/footer") %> 

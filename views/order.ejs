@@ -1,0 +1,161 @@
+<%- include("partials/header") %> 
+
+<!-- Dynamically Changing the Title -->
+<script>
+    document.title = "Place Orders Here | ZomatoClone"
+</script>
+
+<section id="food-info" class="food-info">
+    <div class="container">
+        <h1>Items You can Order</h1>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="food-item">
+                    <img src="/img/burger.jpg" alt="Burger">
+                    <h3>Burger</h3>
+                    <h4>59/-</h4>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="food-item">
+                    <img src="/img/pizza.webp" alt="Pizza">
+                    <h3>Pizza</h3>
+                    <h4>299/-</h4>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="food-item">
+                    <img src="/img/momos.jpg" alt="Momos">
+                    <h3>Momos</h3>
+                    <h4>9/-</h4>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="food-item">
+                    <img src="/img/idli.jpg" alt="Idli">
+                    <h3>Idli</h3>
+                    <h4>99/-</h4>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="food-item">
+                    <img src="/img/dosa.jpg" alt="Dosa">
+                    <h3>Dosa</h3>
+                    <h4>99/-</h4>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="food-item">
+                    <img src="/img/litti-chokha.webp" alt="Litti Chokha">
+                    <h3>Litti Chokha</h3>
+                    <h4>10/-</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="order-us" class="order-us">
+    <div class="container">
+        <h1>Select Your Orders Here</h1>
+        <div class="form-scope">
+            <form method="POST" action="/order">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-1 col-md-4 col-lg-4">
+                            <p>Burger [59/-]</p>
+                        </div>
+                        <div class="col-sm-1 col-md-4 col-lg-4">
+                            <input type="checkbox" name="burgerCheckbox" class="checkbox-default">
+                        </div>
+                        <div class="col-sm-1 col-md-4 col-lg-4">
+                            <input type="text" class="form-control form-control-size" name="userBurger">
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <p>Pizza [299/-]</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <input type="checkbox" name="pizzaCheckbox" class="checkbox-default">
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <input type="text" class="form-control form-control-size" name="userPizza">
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <p>Momos [9/-]</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <input type="checkbox" name="momosCheckbox" class="checkbox-default">
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <input type="text" class="form-control form-control-size" name="userMomos">
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <p>Idli [99/-]</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <input type="checkbox" name="idliCheckbox" class="checkbox-default">
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <input type="text" class="form-control form-control-size" name="userIdli">
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <p>Dosa [99/-]</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <input type="checkbox" name="dosaCheckbox" class="checkbox-default">
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <input type="text" class="form-control form-control-size" name="userDosa">
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <p>Litti Chokha [10/-]</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <input type="checkbox" name="littiCheckbox" class="checkbox-default">
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <input type="text" class="form-control form-control-size" name="userLitti">
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <input type="text" name="userName" class="form-control" placeholder="Enter Your Name" required>
+                </div><br>
+                <div class="form-group">
+                    <input type="text" name="userPhone" class="form-control" placeholder="Enter Your Contact Number" required>
+                </div><br>
+                <div class="form-group">
+                    <input type="text" name="userAddress" class="form-control" placeholder="Enter Your Address" required>
+                </div><br>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg">Continue</button>
+                </div>
+            </form>
+            <p class="error-text"><%= message %> </p>
+        </div>
+    </div>
+</section>
+
+<%- include("partials/footer") %> 
