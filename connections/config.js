@@ -11,7 +11,6 @@ const clusterURL = process.env.URL;
 
 // Remote URI
 const uri = "mongodb+srv://" + user + ":" + password + "@" + clusterURL + db + "?retryWrites=true&w=majority";
-console.log(uri);
 mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
 
 const dbConnection = mongoose.connection;

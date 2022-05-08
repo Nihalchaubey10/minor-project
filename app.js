@@ -80,10 +80,7 @@ app.post("/order", function(req, res) {
             res.render("order", { message: orderMessage });
             orderMessage = "";
         }
-    })
-    // console.log(burgerChecked  + ' ' + pizzaChecked + ' ' + idliChecked + ' ' + dosaChecked + ' ' + momosChecked + ' ' + littisChecked);
-    // console.log(noOfBurgers + ' ' + noOfPizza + ' ' + noOfMomos + ' ' + noOfIdli + ' ' + noOfDosa + ' ' + noOfLittis);
-    // console.log(name + ' ' + phone + ' ' + address);
+    });
 });
 
 const PORT = process.env.PORT || 3000;
