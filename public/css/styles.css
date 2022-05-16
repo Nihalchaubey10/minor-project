@@ -352,6 +352,10 @@ body {
 
 @media (max-width: 768px) {
     
+    #delete-order {
+        margin: 7rem 0;
+    }
+
     #delete-order h1 {
         font-size: 2rem;
     }
