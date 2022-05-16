@@ -349,3 +349,14 @@ body {
     width: 40%;
     margin: auto;
 }
+
+@media (max-width: 768px) {
+    
+    #delete-order h1 {
+        font-size: 2rem;
+    }
+
+    #delete-order .delete-form {
+        width: 100%;
+    }
+}
