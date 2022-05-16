@@ -19,12 +19,18 @@ const Order = new mongoose.model("Order", orderSchema);
 
 let successMessage;
 let orderMessage;
+let deleteMessage;
+
 app.get("/", function (req, res) {
     res.render('home', { message: successMessage });
 });
 
 app.get("/order", function (req, res) {
     res.render('order', {message: orderMessage});
+});
+
+app.get("/delete", function(req, res) {
+    res.render('delete', { message: deleteMessage });
 });
 
 app.post("/", function(req, res) {
@@ -80,6 +86,23 @@ app.post("/order", function(req, res) {
             res.render("order", { message: orderMessage });
             orderMessage = "";
         }
+    });
+});
+
+app.post("/delete", function(req, res) {
+    const userPhoneNumber = req.body.userphone;
+    Order.findOneAndDelete({phone: userPhoneNumber}, function(err, foundOrder) {
+        if(err) {
+            console.log(err);
+        } else {
+            if(foundOrder) {
+                deleteMessage = "Deleted Successfully!";
+            } else {
+                deleteMessage = "No order with this number exists!"
+            }
+        }
+        res.render('delete', { message: deleteMessage});
+        deleteMessage = "";
     });
 });
 
