@@ -7,11 +7,11 @@ const user = process.env.USER;
 const clusterURL = process.env.URL;
 
 // Localhost URI
-// const uri = "mongodb://localhost:27017/zomatoc";
+const uri = "mongodb://localhost:27017/zomatoc";
 
 // Remote URI
-const uri = "mongodb+srv://" + user + ":" + password + "@" + clusterURL + db + "?retryWrites=true&w=majority";
-mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
+// const uri = "mongodb+srv://" + user + ":" + password + "@" + clusterURL + db + "?retryWrites=true&w=majority";
+// mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
 
-const dbConnection = mongoose.connection;
-module.exports = dbConnection;
+// const dbConnection = mongoose.connection;
+// module.exports = dbConnection;
